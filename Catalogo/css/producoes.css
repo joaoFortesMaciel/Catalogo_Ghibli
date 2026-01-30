@@ -99,6 +99,20 @@ body.dark-theme {
     color: #bbb;
 }
 
+/* Removemos a decoração de texto padrão do link */
+.back-link {
+    display: solid;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+/* Tamanho e cor do ícone */
+.back-link img {
+    width: 40px; /* Tamanho confortável para clicar */
+    height: auto;
+}
+
 /* Responsividade para celular */
 @media (max-width: 700px) {
     .modal-flex { flex-direction: column; align-items: center; }
