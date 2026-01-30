@@ -1,0 +1,102 @@
+/* Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #2e2e2e; /* Cinza escuro/grafite */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container Centralizado */
+.container-menu {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #bdc3c7; /* Cinza claro para o subtítulo */
+    margin-bottom: 40px;
+}
+
+/* Grupo de Botões */
+.button-group {
+    display: flex;
+    flex-direction: column; /* Botões um embaixo do outro */
+    gap: 15px;
+    align-items: center;
+}
+
+.btn {
+    background-color: #f1c40f; /* Amarelo Ghibli */
+    color: #2e2e2e;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 250px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+/* Container do Carrossel */
+.carousel-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2; /* Fica atrás de tudo */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Começam invisíveis */
+    transition: opacity 2s ease-in-out; /* A mágica do fade acontece aqui */
+}
+
+.slide.active {
+    opacity: 1; /* Apenas o slide ativo aparece */
+}
+
+/* Camada escura para o texto não sumir no fundo */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: -1;
+}
+
+/* Garanta que o container-menu tenha um z-index maior */
+.container-menu {
+    position: relative;
+    z-index: 10;
+}
