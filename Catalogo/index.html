@@ -4,22 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalo Ghibli - Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h1><div class="logo">Meu</div></h1>
-            <div class="logo">Seja Bem-vindo</div>
-            <ul class="nav-links">
-                <li><a href="#">Produções</a></li>
-                <li><a href="#">Minha Lista</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-            <button class="menu-toggle">☰</button>
+        <div class="carousel-container">
+        <div class="slide active" style="background-image: url('assents/img/bg1.jpg');"></div>
+        <div class="slide" style="background-image: url('assents/img/bg2.jpg');"></div>
+        <div class="slide" style="background-image: url('assents/img/bg3.jpg');"></div>
+        <div class="slide" style="background-image: url('assents/img/bg4.jpg');"></div>
+        <div class="slide" style="background-image: url('assents/img/bg5.jpg');"></div>
+        <div class="slide" style="background-image: url('assents/img/bg6.jpg');"></div>
+        <div class="overlay"></div> </div>
+
+
+    <main class="container-menu">
+        <h1>Catálogo Ghibli</h1>
+        <p class="subtitle">Seja Bem-vindo ao mundo encantado</p>
+
+        <nav class="button-group">
+            <a href="paginas/producoes.html" class="btn">PRODUÇÕES</a>
+            <a href="paginas/lista.html" class="btn">MINHA LISTA</a>
+            <a href="paginas/sobre.html" class="btn">SOBRE</a>
         </nav>
-    </header>
+    </main>
 
     <script src="js/script.js"></script>
 </body>

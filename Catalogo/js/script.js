@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
-const slideInterval = 8000; // 8 segundos
+const slideInterval = 5500; // 5.5 segundos
 
 function nextSlide() {
     // Remove a classe 'active' do slide atual
