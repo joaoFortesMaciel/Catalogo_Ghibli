@@ -1,0 +1,112 @@
+/* Fundo Geral */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+}
+
+/* Grid dos Posters */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover { transform: scale(1.05); box-shadow: 0 0 15px rgba(255,255,255,0.1); }
+.card img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- ESTILO DO MODAL --- */
+.modal-overlay {
+    display: none; /* Começa invisível */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo bem escuro */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #aaa;
+}
+.close-btn:hover { color: #fff; }
+
+/* Layout Flex: Poster na Esquerda, Texto na Direita */
+.modal-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.modal-poster img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.modal-info h2 {
+    margin-top: 0;
+    color: #f1c40f; /* Amarelo Ghibli */
+    font-size: 2rem;
+}
+
+.meta-data { margin-bottom: 15px; }
+
+.tag {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.rating-box { margin: 15px 0; font-size: 1.2rem; }
+.stars { display: inline-block; margin-left: 10px; }
+
+.description {
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.extra-info p {
+    margin: 5px 0;
+    color: #bbb;
+}
+
+/* Responsividade para celular */
+@media (max-width: 700px) {
+    .modal-flex { flex-direction: column; align-items: center; }
+    .modal-poster img { width: 150px; margin-bottom: 20px; }
+    .modal-info { text-align: center; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
