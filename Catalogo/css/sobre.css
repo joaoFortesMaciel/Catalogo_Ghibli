@@ -1,0 +1,123 @@
+/* --- CONFIGURAÇÕES GLOBAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Fundo escuro padrão do projeto */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o body ocupe a tela toda */
+}
+
+/* --- CABEÇALHO --- */
+header {
+    padding: 20px 5%;
+}
+
+.back-link img {
+    width: 30px; 
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover img {
+    transform: scale(1.1);
+}
+
+/* --- CONTEÚDO (SOBRE) --- */
+main {
+    flex: 1; /* Faz o conteúdo crescer e empurrar o footer para baixo */
+}
+
+.container-sobre {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.container-sobre h2, 
+.container-sobre h3 {
+    color: #f1c40f; /* Amarelo Ghibli */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.container-sobre p {
+    margin-bottom: 20px;
+    color: #dddddd;
+}
+
+/* Tags de Tecnologia */
+.tecnologias {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.tag {
+    background-color: #f1c40f;
+    color: #1a1a1a;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* --- RODAPÉ (FOOTER) --- */
+.ghibli-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+    border-top: 2px solid #f1c40f;
+    width: 100%;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.75rem !important;
+    color: #666;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    display: inline-block;
+    width: 80%;
+}
