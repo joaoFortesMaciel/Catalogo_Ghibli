@@ -1,10 +1,7 @@
-/* 1. BASES E IMPORTAÇÃO */
 @import url('sobre.css');
 
-/* 2. CONTAINER PRINCIPAL */
-/* Forçando o container a ignorar regras externas que empilham elementos */
 .container-lista {
-    display: block !important; /* Garante que não sofra com Flexbox do pai */
+    display: block !important;
     padding: 40px 2%;
     max-width: 1300px;
     margin: 0 auto;
@@ -13,16 +10,14 @@
 
 .grid-lista {
     display: grid !important;
-    /* Aqui está o segredo: auto-fill com tamanho fixo */
     grid-template-columns: repeat(auto-fill, 250px); 
     gap: 30px;
-    justify-content: center; /* Centraliza o grupo de cards */
+    justify-content: center;
     align-items: start;
     width: 100%;
     animation: fadeIn 0.8s ease-in;
 }
 
-/* 4. CARD INDIVIDUAL */
 .card {
     width: 250px; 
     min-height: 450px;
@@ -42,7 +37,6 @@
     border-color: #f1c40f;
 }
 
-/* 5. ELEMENTOS INTERNOS DO CARD */
 .card img {
     width: 100%;
     height: 320px;
@@ -54,7 +48,7 @@
 .card-info {
     padding: 15px;
     text-align: center;
-    flex-grow: 1; /* Faz as infos ocuparem o espaço restante */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,7 +63,6 @@
     margin-bottom: 5px;
 }
 
-/* 6. COMPONENTES E BOTÕES */
 .streaming-tag {
     font-size: 0.85rem;
     color: #f1c40f;
@@ -97,7 +90,6 @@
     color: white;
 }
 
-/* 7. ANIMAÇÕES E ESTADOS */
 .card.removendo {
     opacity: 0;
     transform: scale(0.8) translateY(-20px);
@@ -110,7 +102,6 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 8. HEADER E VOLTAR */
 header h1 {
     color: #f1c40f;
     text-align: center;
@@ -119,11 +110,10 @@ header h1 {
 }
 
 .back-link img {
-    width: 40px; /* Ajuste para o seu ícone de voltar não ficar gigante */
+    width: 40px;
     transition: 0.3s;
 }
 
-/* Container da mensagem para garantir a centralização */
 .mensagem-vazia {
     display: flex;
     flex-direction: column;
@@ -133,19 +123,18 @@ header h1 {
     padding: 100px 20px;
 }
 
-/* O "Enfeite" do Botão Explorar */
 .btn-explorar {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 35px;
-    background-color: #f1c40f; /* O amarelo ouro Ghibli */
+    background-color: #f1c40f;
     color: #1a1a1a;
     text-decoration: none;
     font-weight: 800;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 50px; /* Bordas bem arredondadas */
+    border-radius: 50px;
     box-shadow: 0 4px 15px rgba(241, 196, 15, 0.3);
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border: 2px solid transparent;
@@ -153,7 +142,6 @@ header h1 {
     overflow: hidden;
 }
 
-/* Efeito de brilho/hover */
 .btn-explorar:hover {
     background-color: #f7ff84;
     color: #f1c40f;
@@ -162,13 +150,11 @@ header h1 {
     border-color: #f1c40f;
 }
 
-/* Efeito de clique */
 .btn-explorar:active {
     transform: translateY(-1px);
     box-shadow: 0 2px 10px rgba(241, 196, 15, 0.2);
 }
 
-/* Pequena animação de "pulso" para chamar atenção se a lista estiver vazia */
 .btn-explorar {
     animation: pulse 2s infinite;
 }

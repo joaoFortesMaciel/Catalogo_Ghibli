@@ -1,4 +1,3 @@
-/* Fundo Geral */
 body.dark-theme {
     background-color: #121212;
     color: #ffffff;
@@ -6,7 +5,6 @@ body.dark-theme {
     margin: 0;
 }
 
-/* Grid dos Posters */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -24,13 +22,12 @@ body.dark-theme {
 .card:hover { transform: scale(1.05); box-shadow: 0 0 15px rgba(255,255,255,0.1); }
 .card img { width: 100%; height: 100%; object-fit: cover; }
 
-/* --- ESTILO DO MODAL --- */
 .modal-overlay {
-    display: none; /* Começa invisível */
+    display: none; 
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo bem escuro */
+    background-color: rgba(0, 0, 0, 0.9); 
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -56,7 +53,6 @@ body.dark-theme {
 }
 .close-btn:hover { color: #fff; }
 
-/* Layout Flex: Poster na Esquerda, Texto na Direita */
 .modal-flex {
     display: flex;
     gap: 30px;
@@ -71,7 +67,7 @@ body.dark-theme {
 
 .modal-info h2 {
     margin-top: 0;
-    color: #f1c40f; /* Amarelo Ghibli */
+    color: #f1c40f;
     font-size: 2rem;
 }
 
@@ -99,7 +95,6 @@ body.dark-theme {
     color: #bbb;
 }
 
-/* Removemos a decoração de texto padrão do link */
 .back-link {
     display: solid;
     align-items: center;
@@ -107,13 +102,11 @@ body.dark-theme {
     transition: transform 0.2s;
 }
 
-/* Tamanho e cor do ícone */
 .back-link img {
-    width: 40px; /* Tamanho confortável para clicar */
+    width: 40px;
     height: auto;
 }
 
-/* Botão dentro do Modal */
 .btn-add-lista {
     background-color: #f1c40f;
     border: none;
@@ -127,7 +120,6 @@ body.dark-theme {
 
 .btn-add-lista:hover { background-color: #fff; }
 
-/* Botão de remover na página de Lista */
 .btn-remover {
     background-color: #e74c3c;
     color: white;
@@ -140,7 +132,6 @@ body.dark-theme {
 
 .card-info { padding: 10px; text-align: center; }
 
-/* Responsividade para celular */
 @media (max-width: 700px) {
     .modal-flex { flex-direction: column; align-items: center; }
     .modal-poster img { width: 150px; margin-bottom: 20px; }
@@ -152,8 +143,6 @@ body.dark-theme {
     to { opacity: 1; }
 }
 
-
-/* --- RODAPÉ (FOOTER) --- */
 .ghibli-footer {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -183,7 +172,7 @@ body.dark-theme {
 }
 
 .social-links a i {
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    margin-right: 5px;
 }
 
 .social-links a:hover {
