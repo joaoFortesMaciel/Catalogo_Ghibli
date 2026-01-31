@@ -124,3 +124,52 @@ body.dark-theme {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+
+/* --- RODAPÉ (FOOTER) --- */
+.ghibli-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 25px 0 20px 0;
+    text-align: center;
+    border-top: 2px solid #f1c40f;
+    width: 100%;
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a i {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.75rem !important;
+    color: #666;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    display: inline-block;
+    width: 80%;
+}
