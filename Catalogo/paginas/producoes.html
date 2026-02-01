@@ -11,8 +11,15 @@
         <a href="../index.html" class="back-link">
             <img src="../assents/icons/de-volta.png" alt="Voltar ao Menu">
         </a>
-        <h1>Biblioteca de Filmes</h1>
+        <h1 class="titulo-pagina">Biblioteca de Filmes</h1>
     </header>
+
+    <div class="search-container">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="input-busca" placeholder="Pesquisar filme por título...">
+        </div>
+    </div>
 
     <main class="grid-container">
         
@@ -29,7 +36,7 @@
              data-sinopse="Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los."
              data-imagem="../assents/img/poster1.jpg">
              
-            <img src="../assents/img/poster1.jpg" alt="Chihiro">
+            <img src="../assents/img/poster1.jpg" alt="A Viagem de Chihiro">
         </div>
 
         <!-- Totoro -->
@@ -45,7 +52,7 @@
              data-sinopse="As irmãs Satsuki e Mei se mudam para o campo para ficar mais perto do hospital onde sua mãe está internada. Lá conhecem os Totoros, adoráveis criaturas místicas e alegres, que só podem ser vistas pelas crianças. Com eles, as duas irmãs viverão mágicas aventuras no campo."
              data-imagem="../assents/img/poster2.jpg">
              
-            <img src="../assents/img/poster2.jpg" alt="Totoro">
+            <img src="../assents/img/poster2.jpg" alt="Meu Amigo Totoro">
         </div>
 
         <!-- KIKI -->
@@ -61,7 +68,7 @@
              data-sinopse="Por ordem de sua mãe, Kiki parte para um aprendizado de um ano, acompanhada por seu gato preto. A um comando de sua vassoura mágica, ela vai parar na charmosa cidadezinha de Moreoastal. Infelizmente, os hotéis locais não aceitam bruxas e a polícia a flagra fazendo algumas travessuras."
              data-imagem="../assents/img/poster3.jpg">
              
-            <img src="../assents/img/poster3.jpg" alt="Kiki">
+            <img src="../assents/img/poster3.jpg" alt="O Serviço de Entregas da Kiki">
         </div>
 
         <!-- Mononoke -->
@@ -77,7 +84,7 @@
              data-sinopse="Um príncipe, em busca de uma cura, luta em uma guerra entre a mata e uma colônia mineira. Nesta aventura ele conhece Mononoke."
              data-imagem="../assents/img/poster4.jpg">
              
-            <img src="../assents/img/poster4.jpg" alt="Mononoke">
+            <img src="../assents/img/poster4.jpg" alt="Princesa Mononoke">
         </div>
 
         <!-- Vidas ao vento -->
@@ -93,7 +100,7 @@
              data-sinopse="Jiro Horikoshi é um jovem que vive em uma cidade no interior do Japão. Ele tem o sonho de voar em um avião com formato de pássaro. A partir desse sonho, Jiro decide que construir um avião como deseja e colocá-lo no ar é a meta de sua vida. Durante a busca pela realização deste objetivo, ele conhece Naoko, uma jovem encantadora por quem se apaixona. No entanto, Naoko fica profundamente doente, sem saber se sobreviverá, e os planos de Jiro podem estar prestes a mudar."
              data-imagem="../assents/img/poster5.jpg">
              
-            <img src="../assents/img/poster5.jpg" alt="Vidas_ao_Vento">
+            <img src="../assents/img/poster5.jpg" alt="Vidas ao Vento">
         </div>
 
         <!-- Arrietty -->
@@ -109,7 +116,7 @@
              data-sinopse="Arrietty e sua família são seres pequenos, moram sob uma casa antiga e sobrevivem roubando itens da casa dos humanos e colocando a culpa em gatos e ratos. Quando o jovem Shawn se hospeda na casa, fica amigo de Arrietty, colocando o segredo em risco."
              data-imagem="../assents/img/poster6.jpg">
              
-            <img src="../assents/img/poster6.jpg" alt="Arrietty">
+            <img src="../assents/img/poster6.jpg" alt="O Mundo dos Pequeninos">
         </div>
 
         <!-- Ponyo -->
@@ -125,7 +132,7 @@
              data-sinopse="O garoto Sousuke encontra um peixinho dourado preso em uma garrafa e decide libertá-lo, sem saber que se trata da deusa do mar Ponyo. Filha de um poderoso mago, ela se comove com a atitude do menino e usa a magia do pai para se transformar em humana. Dessa forma, acredita poder fortalecer a amizade com Sousuke. Porém, a substância de sua poção mágica pode colocar em risco o vilarejo onde mora o menino."
              data-imagem="../assents/img/poster7.jpg">
              
-            <img src="../assents/img/poster7.jpg" alt="Ponyo">
+            <img src="../assents/img/poster7.jpg" alt="Ponyo: Uma Amizade que Veio do Mar">
         </div>
 
         <!-- Vagalumes -->
@@ -141,13 +148,13 @@
              data-sinopse="Os irmão Setsuko e Seita vivem no Japão em meio a Segunda Guerra Mundial. Após a morte da mãe em um bombardeio e a convocação do pai para a Guerra, eles vão morar com alguns parentes. Insatisfeitos, saem da cidade e acabam em um abrigo na floresta."
              data-imagem="../assents/img/poster8.jpg">
              
-            <img src="../assents/img/poster8.jpg" alt="Vagalumes">
+            <img src="../assents/img/poster8.jpg" alt="Túmulo dos Vagalumes">
         </div>
 
         <!-- Kaguya -->
         <div class="card" 
              onclick="abrirDetalhes(this)"
-             data-titulo="Princesa Mononoke"
+             data-titulo="O Conto da Princesa Kaguya"
              data-streaming="Netflix"
              data-ano="2013"
              data-diretor="Isao Takahata"
@@ -157,7 +164,7 @@
              data-sinopse="Kaguya era uma bebê que foi encontrada dentro de um tronco de bambu brilhante. Passado o tempo, ela se transforma em uma bela jovem que passa a ser cobiçada por cinco nobres, dentre eles, o próprio imperador."
              data-imagem="../assents/img/poster9.jpg">
              
-            <img src="../assents/img/poster9.jpg" alt="Kaguya">
+            <img src="../assents/img/poster9.jpg" alt="O Conto da Princesa Kaguya">
         </div>
 
         <!-- Gatos -->
@@ -173,7 +180,7 @@
              data-sinopse="Haru salva um gato que estava prestes a ser atropelado por um caminhão e descobre que ele é, na verdade, um príncipe. Por gratidão o Rei dos Gatos a pede em casamento, e a menina é levada para o Reino dos Gatos. Agora, ela quer sua liberdade."
              data-imagem="../assents/img/poster10.jpg">
              
-            <img src="../assents/img/poster10.jpg" alt="Gatos">
+            <img src="../assents/img/poster10.jpg" alt="O Reino dos Gatos">
         </div>
 
         <!-- Nausicaa -->
@@ -189,7 +196,7 @@
              data-sinopse="Mil anos se passaram após a Terra ser varrida pela Guerra dos Sete Dias de Fogo. O planeta se tornou hostil, cheio de florestas tóxicas e insetos gigantes. Enquanto tenta navegar nesse mundo de perigos, a princesa Nausicaä, a soberana de um pequeno reino, tenta de todas as formas salvar o seu povo e impedir que duas nações entrem em guerra e se destruam em um planeta agonizante."
              data-imagem="../assents/img/poster11.jpg">
              
-            <img src="../assents/img/poster11.jpg" alt="Nausicaa">
+            <img src="../assents/img/poster11.jpg" alt="Nausicaa do Vale do Vento">
         </div>
 
         <!-- Terramar -->
@@ -205,7 +212,7 @@
              data-sinopse="O mago Ged observa que o mundo está em desequilíbrio e conhece Arren, um jovem príncipe que diz estar sendo perseguido por uma sombra. Os dois se unem para descobrir o que está causando a instabilidade e encontram a bruxa Kumo."
              data-imagem="../assents/img/poster12.jpg">
              
-            <img src="../assents/img/poster12.jpg" alt="Terramar">
+            <img src="../assents/img/poster12.jpg" alt="Contos de Terramar">
         </div>
 
         <!-- Rosso -->
@@ -221,7 +228,7 @@
              data-sinopse="No final da década de 1920, o piloto de avião Porco Rosso luta pela paz nos céus como um soldado contratado. Em suas viagens, ele se une à mecânica Fiona, que o apoia na luta contra o pirata do ar Curtis."
              data-imagem="../assents/img/poster13.jpg">
              
-            <img src="../assents/img/poster13.jpg" alt="Rosso">
+            <img src="../assents/img/poster13.jpg" alt="Porco Rosso: O Último Herói Romântico">
         </div>
 
         <!-- PomPoko -->
@@ -237,7 +244,7 @@
              data-sinopse="Os humanos estão expulsando os guaxinins de seu lar, mas eles estão prontos para lutar e revidar."
              data-imagem="../assents/img/poster14.jpg">
              
-            <img src="../assents/img/poster14.jpg" alt="PomPoko">
+            <img src="../assents/img/poster14.jpg" alt="PomPoko - A Grande Batalha dos Guaxinins">
         </div>
 
         <!-- Howl -->
@@ -253,7 +260,7 @@
              data-sinopse="Uma bruxa lança uma terrível maldição sobre a jovem Sophie transformando-a em uma velha. Desesperada, ela embarca em uma odisseia em busca do mago Howl, um misterioso feiticeiro que pode ajudá-la a reverter o feitiço."
              data-imagem="../assents/img/poster15.jpg">
              
-            <img src="../assents/img/poster15.jpg" alt="Howl">
+            <img src="../assents/img/poster15.jpg" alt="">
         </div>
 
         <!-- Marnie -->
@@ -269,7 +276,7 @@
              data-sinopse="Anna, uma menina solitária e curiosa, decide explorar uma velha mansão abandonada e conhece uma garota loira misteriosa que somente ela consegue ver."
              data-imagem="../assents/img/poster16.jpg">
              
-            <img src="../assents/img/poster16.jpg" alt="Marnie">
+            <img src="../assents/img/poster16.jpg" alt="As Memórias de Marnie">
         </div>
 
         <!-- Yamadas -->
@@ -285,10 +292,10 @@
              data-sinopse="A família Yamada é composta por personalidades fortes. Takashi Yamada é um homem de negócios e compartilha sua vida com Matsuko, sua esposa um tanto excêntrica e preguiçosa. Todos os membros da família Yamada vivem aventuras juntos."
              data-imagem="../assents/img/poster17.jpeg">
              
-            <img src="../assents/img/poster17.jpeg" alt="Yamadas">
+            <img src="../assents/img/poster17.jpeg" alt="Meus vizinhos, Os Yamadas">
         </div>
 
-                <!-- Castelo -->
+        <!-- Castelo -->
         <div class="card" 
              onclick="abrirDetalhes(this)"
              data-titulo="O Castelo no Céu"
@@ -301,7 +308,7 @@
              data-sinopse="Sheeta, uma jovem órfã que possui um colar misterioso se une ao mineiro Pazu para procurar uma lendária cidade flutuante. Mas a dupla é perseguida por gananciosos piratas aéreos."
              data-imagem="../assents/img/poster19.jpg">
              
-            <img src="../assents/img/poster19.jpg" alt="Castelo">
+            <img src="../assents/img/poster19.jpg" alt="O Castelo no Céu">
         </div>
 
         <!-- Garça -->
@@ -317,7 +324,7 @@
              data-sinopse="Mahito, um menino de 12 anos, luta para se estabelecer em uma nova cidade após a morte de sua mãe. Quando uma garça falante conta para Mahito que sua mãe continua viva, ele entra em uma torre abandonada em busca dela, o que o leva para outro mundo."
              data-imagem="../assents/img/poster18.jpg">
              
-            <img src="../assents/img/poster18.jpg" alt="Garça">
+            <img src="../assents/img/poster18.jpg" alt="O Menino e a Garça">
         </div>
 
         <!-- Aya -->
@@ -333,7 +340,7 @@
              data-sinopse="Earwing adora morar no orfanato, algo que nem todos os órfãos vivenciam. Ela tem o que precisa, mas tudo muda quando Bella Yaga e a Mandrágora se disfarçam de pais adotivos. Ao chegar em seu novo lar, ele encontra magia, poções e câmaras invisíveis e, assim, decide investigar o que está acontecendo e mostrar quem manda."
              data-imagem="../assents/img/poster20.jpg">
              
-            <img src="../assents/img/poster20.jpg" alt="Aya">
+            <img src="../assents/img/poster20.jpg" alt="Aya e a Bruxa">
         </div>
 
     </main>
