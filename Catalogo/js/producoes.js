@@ -11,7 +11,6 @@ function abrirDetalhes(elemento) {
         streaming: d.streaming
     };
 
-    // Preenchimento do Modal
     document.getElementById('m-titulo').innerText = d.titulo;
     document.getElementById('m-ano').innerText = d.ano;
     document.getElementById('m-diretor').innerText = d.diretor;
@@ -27,11 +26,9 @@ function abrirDetalhes(elemento) {
     
     document.getElementById('modalDetalhes').style.display = 'flex';
 
-    // Lógica do Botão de Favoritos (Verificação)
     atualizarBotaoLista(d.titulo);
 }
 
-// Função auxiliar para evitar repetição de código
 function atualizarBotaoLista(titulo) {
     const listaVerificacao = JSON.parse(localStorage.getItem('ghibliLista')) || [];
     const btn = document.getElementById('btn-lista');
@@ -71,8 +68,6 @@ function toggleLista() {
         btn.style.backgroundColor = "#2ecc71";
         btn.style.color = "white";
         
-        // Se quiser adicionar o efeito de confete aqui:
-        // confetti({ particleCount: 100, spread: 70, origin: { y: 0.8 } });
     } else {
         lista.splice(existeIndex, 1);
         btn.innerHTML = '<i class="fas fa-trash"></i> Removido';
@@ -82,13 +77,11 @@ function toggleLista() {
 
     localStorage.setItem('ghibliLista', JSON.stringify(lista));
 
-    // Retorna o botão ao estado normal após 2 segundos
     setTimeout(() => {
         atualizarBotaoLista(filmeAtual.titulo);
     }, 2000);
 }
 
-// Fecha modal ao clicar fora
 window.onclick = function(event) {
     const modal = document.getElementById('modalDetalhes');
     if (event.target === modal) {
@@ -96,31 +89,24 @@ window.onclick = function(event) {
     }
 }
 
-// Busca por filmes definitiva
 const inputBusca = document.getElementById('input-busca');
 
 if (inputBusca) {
     inputBusca.addEventListener('input', (e) => {
         const termoBusca = e.target.value.toLowerCase().trim();
-        // Seleciona todos os elementos que têm a borda e o fundo (o card completo)
         const cards = document.querySelectorAll('.card'); 
 
         cards.forEach(card => {
-            // Buscamos o título dentro do card atual
             const tituloElemento = card.querySelector('h3');
             
-            // Se o card não tiver um h3 (pode acontecer em estruturas diferentes), 
-            // vamos tentar buscar no alt da imagem como backup
             const tituloText = tituloElemento ? 
                                tituloElemento.innerText.toLowerCase() : 
                                card.querySelector('img').alt.toLowerCase();
 
             if (tituloText.includes(termoBusca)) {
-                // Se o termo estiver no título, o card fica visível
                 card.style.display = ""; 
                 card.style.opacity = "1";
             } else {
-                // Se NÃO estiver, o card desaparece TOTALMENTE do layout
                 card.style.display = "none";
                 card.style.opacity = "0";
             }
